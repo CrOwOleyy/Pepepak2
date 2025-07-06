@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pepepak - Statistiques Serveurs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">PEPEPAK</a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="stats.html" class="active">Statistiques</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="stats-section">
+    <h1 class="stats-title">Statistiques <span class="cyber">Serveurs</span></h1>
+    <div class="stats-cards">
+      <div class="stats-card" id="gmod">
+        <h2>Gmod</h2>
+        <ul>
+          <li>Joueurs: <span id="gmod-players">--</span></li>
+          <li>Map: <span id="gmod-map">--</span></li>
+          <li>Status: <span id="gmod-status">Inconnu</span></li>
+        </ul>
+      </div>
+      <div class="stats-card" id="minecraft">
+        <h2>Minecraft</h2>
+        <ul>
+          <li>Joueurs: <span id="mc-players">--</span></li>
+          <li>Status: <span id="mc-status">Inconnu</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="stats-info">Actualisation automatique à l’intégration du backend.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serveurs</h4>
+        <ul>
+          <li><a href="stats.html#gmod">Serveur Gmod</a></li>
+          <li><a href="stats.html#minecraft">Serveur Minecraft</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 PEPEPAK. Tous droits réservés.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

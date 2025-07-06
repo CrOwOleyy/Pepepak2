@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pepepak - Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">PEPEPAK</a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+        <li><a href="stats.html">Statistiques</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="support-section">
+    <h1 class="support-title">Support <span class="cyber">PEPEPAK</span></h1>
+    <form class="support-form">
+      <label>Type de ticket</label>
+      <select required>
+        <option value="">Choisir...</option>
+        <option>Support technique</option>
+        <option>Bug</option>
+        <option>Suggestion</option>
+        <option>Autre</option>
+      </select>
+      <label>Gravité</label>
+      <select required>
+        <option value="">Choisir...</option>
+        <option>Faible</option>
+        <option>Moyenne</option>
+        <option>Élevée</option>
+        <option>Critique</option>
+      </select>
+      <label>Message</label>
+      <textarea rows="6" required></textarea>
+      <button type="submit" class="btn-primary">Envoyer le ticket</button>
+    </form>
+    <p class="support-info">Un membre du staff vous répondra dès que possible.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serveurs</h4>
+        <ul>
+          <li><a href="stats.html#gmod">Serveur Gmod</a></li>
+          <li><a href="stats.html#minecraft">Serveur Minecraft</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 PEPEPAK. Tous droits réservés.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

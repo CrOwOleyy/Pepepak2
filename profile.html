@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pepepak - Profil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">PEPEPAK</a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="stats.html">Statistiques</a></li>
+        <li><a href="profil.html" class="active">Profil</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="profile-section">
+    <div class="profile-header">
+      <div class="profile-avatar-container">
+        <img src="loulou.jpg" alt="Avatar" class="profile-avatar" id="avatarPreview">
+        <input type="file" id="avatarUpload" accept="image/*" style="display:none;">
+        <button class="btn-secondary btn-avatar" onclick="document.getElementById('avatarUpload').click()">Changer l’avatar</button>
+      </div>
+      <div class="profile-info">
+        <h1 id="profilePseudo">PepepakUser</h1>
+        <p class="profile-rank">Rang : <span id="profileRank">Membre</span></p>
+        <p class="profile-email">Email : <span id="profileEmail">pepepak@exemple.com</span></p>
+        <button class="btn-primary" onclick="alert('Fonction à ajouter : modification du profil')">Modifier mon profil</button>
+        <button class="btn-tertiary" onclick="alert('Déconnexion !')">Déconnexion</button>
+      </div>
+    </div>
+    <div class="profile-body">
+      <div class="profile-badges">
+        <h2>Badges</h2>
+        <div class="badges-list">
+          <div class="badge">👑<span>VIP</span></div>
+          <div class="badge">💬<span>100 messages</span></div>
+          <div class="badge">🎉<span>Ancien</span></div>
+          <!-- Ajouter plus de badges ici -->
+        </div>
+      </div>
+      <div class="profile-activity">
+        <h2>Activité récente</h2>
+        <ul>
+          <li>📝 Sujet posté sur le forum : <a href="#">Présentation</a></li>
+          <li>🎫 Ticket “Bug” résolu</li>
+          <li>🛒 Achat : Grade VIP</li>
+          <li>💬 Réponse dans “Serveur Minecraft”</li>
+          <!-- Historique dynamique à brancher sur le back -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serveurs</h4>
+        <ul>
+          <li><a href="stats.html#gmod">Serveur Gmod</a></li>
+          <li><a href="stats.html#minecraft">Serveur Minecraft</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 PEPEPAK. Tous droits réservés.</p>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    // Avatar upload preview (front only)
+    document.getElementById('avatarUpload').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(ev) {
+          document.getElementById('avatarPreview').src = ev.target.result;
+        }
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>

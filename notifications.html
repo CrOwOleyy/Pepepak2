@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pepepak - Notifications</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">PEPEPAK</a>
+      <button class="nav-toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="stats.html">Statistiques</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="notifications.html" class="active">Notifications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="notifications-section">
+    <h1 class="notifications-title">Mes <span class="cyber">Notifications</span></h1>
+    <div class="notifications-list">
+      <div class="notification unread">
+        <span class="notif-icon">💬</span>
+        <div>
+          <strong>Nouveau message</strong> sur le sujet <a href="#">Présentation</a>
+          <div class="notif-date">Il y a 2 minutes</div>
+        </div>
+      </div>
+      <div class="notification">
+        <span class="notif-icon">🎫</span>
+        <div>
+          <strong>Ticket résolu</strong> : Bug “Impossible de se connecter”
+          <div class="notif-date">Il y a 1h</div>
+        </div>
+      </div>
+      <div class="notification">
+        <span class="notif-icon">🛒</span>
+        <div>
+          <strong>Achat validé</strong> : Grade VIP sur le serveur Gmod
+          <div class="notif-date">Hier</div>
+        </div>
+      </div>
+      <div class="notification unread">
+        <span class="notif-icon">👀</span>
+        <div>
+          <strong>Vous avez été mentionné</strong> par <a href="#">GameMaster</a>
+          <div class="notif-date">Il y a 3 jours</div>
+        </div>
+      </div>
+      <!-- À brancher dynamiquement sur le backend -->
+    </div>
+    <button class="btn-tertiary" onclick="alert('Tout marquer comme lu (fonction à brancher)')">Tout marquer comme lu</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serveurs</h4>
+        <ul>
+          <li><a href="stats.html#gmod">Serveur Gmod</a></li>
+          <li><a href="stats.html#minecraft">Serveur Minecraft</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communauté</h4>
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="forum.html">Forum</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 PEPEPAK. Tous droits réservés.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
